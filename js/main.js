@@ -14,3 +14,31 @@ if (document.body.clientWidth < 576) {
 }
 
 AOS.init();
+
+$(document).ready(function () {
+	$(".anim").hover(
+		function () {
+			$(this).addClass("animated tada");
+		},
+		function () {
+			$(this).removeClass("animated tada");
+		}
+	);
+});
+
+// function animate(elem) {
+// 	var effect = elem.data("effect");
+// 	elem
+// 		.addClass("animated " + effect)
+// 		.one(
+// 			"webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+// 			function () {
+// 				elem.removeClass("animated " + effect);
+// 			}
+// 		);
+// }
+// $(document).ready(function () {
+// 	$(".anim").mouseenter(function () {
+// 		animate($(this));
+// 	});
+// });
