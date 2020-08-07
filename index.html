@@ -8,13 +8,14 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="css/aos.css" />
 		<link rel="stylesheet" href="css/vidbg.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<header class="header">
-			<img src="img/logo.svg" alt="Logo Space X" class="logo" />
-			<nav class="main-nav">
+			<img src="img/logo.svg" alt="Logo Space X" class="logo" data-aos="fade-down" />
+			<nav class="main-nav" data-aos="fade-down">
 				<ul class="list">
 					<li class="item">
 						<a href="#" class="item-link">Falcon 9</a>
@@ -30,7 +31,7 @@
 					</li>
 				</ul>
 			</nav>
-			<nav class="secondary-nav">
+			<nav class="secondary-nav" data-aos="fade-down">
 				<ul class="list">
 					<li class="item">
 						<a href="#" class="item-link">About</a>
@@ -45,12 +46,12 @@
 			</nav>
 		</header>
 		<section class="main">
-			<h1 class="title">Falcon Heavy</h1>
-			<p class="description">
+			<h1 class="title" data-aos="fade-up" data-aos-delay="500">Falcon Heavy</h1>
+			<p class="description" data-aos="fade-up" data-aos-delay="1000">
 				The most powerful operational rocket in the world by a factor of two
 			</p>
 		</section>
-		<div class="video"></div>
+		<div class="video" data-aos="fade-up" data-aos-delay="1300"></div>
 		<section class="features">
 			<div class="overview">
 				<h2 class="features-title">
@@ -83,7 +84,7 @@
 						<td class="table-column">16,800 kg / 37,040 lb</td>
 					</tr>
 				</table>
-				<img src="img/falcon-heavy.png" alt="rocket" class="rocket" data-rellax-speed="5" />
+				<img src="img/falcon-heavy.png" alt="rocket" class="rocket" data-rellax-speed="3" />
 				<h2 class="features-title">UNMATCHED <br />PERFORMANCE</h2>
 				<p class="features-text">
 					With more than 5 million pounds of thrust at liftoff, Falcon Heavy is the most capable
@@ -114,6 +115,7 @@
 		</footer>
 		<script src="js/vidbg.js"></script>
 		<script src="js/rellax.min.js"></script>
+		<script src="js/aos.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
