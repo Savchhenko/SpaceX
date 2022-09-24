@@ -26,8 +26,15 @@ body {
 	font-size: 12px;
 	line-height: 14px;
 }
+.item-link:hover {
+	display: inline-block;
+	transform: scale(1.2);
+}
 .secondary-nav .item-link {
 	color: #808080;
+}
+.secondary-nav .item-link:hover {
+	color: #fff;
 }
 .main {
 	text-align: center;
